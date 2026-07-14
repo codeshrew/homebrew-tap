@@ -5,21 +5,21 @@ class Confer < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/codeshrew/confer/releases/download/v0.4.8/confer-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "34e09d259d70b3e530996864c79f1b5f898b96ef3e6c515e98188bceda5b058d"
+      sha256 "0bd9eb0c05a11ea097f0c7c3735f7e2cfba9638ea611d8df6bf5c1685d77348f"
     end
     if Hardware::CPU.intel?
       url "https://github.com/codeshrew/confer/releases/download/v0.4.8/confer-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "6f9f97bac20f79e4275114e6eef8ca8e1336939a57fb163fbde62316fdd0375f"
+      sha256 "7be608e7918595d9f8b3dac95ef97eef5c6d7594397b164013ac8b47e8b47503"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/codeshrew/confer/releases/download/v0.4.8/confer-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "5cfca13d5cbdf33158191569b9eb2e4e208b5d4ff0b6b1efde4d92372ac8c2fe"
+      sha256 "d93399965b0633317082b4f08ba5f61ea41a041a74262d175ef0ac393025c273"
     end
     if Hardware::CPU.intel?
       url "https://github.com/codeshrew/confer/releases/download/v0.4.8/confer-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "3072a8f3ecbe51559b3cfd345c40b228c504fb96301e452b06d9c54210f262af"
+      sha256 "83461ab4b2c6a8e332d682e2ae72e1725f830d760edb5bf5dc4b419a255c65f5"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
