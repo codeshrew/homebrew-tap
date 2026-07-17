@@ -1,25 +1,25 @@
 class Confer < Formula
   desc "A git-native coordination substrate for fleets of AI agents — an append-only, signed, verifiable message log with a thin liveness layer, no database and no server."
   homepage "https://github.com/codeshrew/confer"
-  version "0.7.1"
+  version "0.7.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/codeshrew/confer/releases/download/v0.7.1/confer-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "50dcc51f01d139f7b650abae30f3ceb4e0bdbf40e6ca9e363c6c146bd12f505a"
+      url "https://github.com/codeshrew/confer/releases/download/v0.7.2/confer-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "3917aecce775e8b45e253b38ac0eecd57dc15df837ededd13fa118ed522bc5cb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/codeshrew/confer/releases/download/v0.7.1/confer-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "95c799b10e2dae936eadf2794e9cbb32a275845ba2797f80fc32e60b382bba57"
+      url "https://github.com/codeshrew/confer/releases/download/v0.7.2/confer-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "51c5aeebbe7c31dbc7eed117f05ed5cedf26acd02aa62e206f1fee02071ad02f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/codeshrew/confer/releases/download/v0.7.1/confer-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "a195707b3ddbbf1ebe78c2b0c067019fba5c2ab667fe78064fdfe1aa5608a447"
+      url "https://github.com/codeshrew/confer/releases/download/v0.7.2/confer-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "6bbd48b088b0c80e77af3901b96aaba9cd51dfcd402db50ca4191407799229f6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/codeshrew/confer/releases/download/v0.7.1/confer-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "4c693b2be0a698358fb61a50d66764024654970ec2102826d5fb923dc83ce8eb"
+      url "https://github.com/codeshrew/confer/releases/download/v0.7.2/confer-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "74ed8a8025822c7239a15724ae145c40408adcbb35bee0189fbc449e7bda6459"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
