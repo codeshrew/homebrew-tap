@@ -1,25 +1,25 @@
 class Confer < Formula
   desc "A git-native coordination substrate for fleets of AI agents — an append-only, signed, verifiable message log with a thin liveness layer, no database and no server."
   homepage "https://github.com/codeshrew/confer"
-  version "0.8.27"
+  version "0.8.28"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/codeshrew/confer/releases/download/v0.8.27/confer-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "235d7c955c67017ab3b2d4afc69880fb7c7fc632998a23fc96fbda28cde58c19"
+      url "https://github.com/codeshrew/confer/releases/download/v0.8.28/confer-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "27c5794d84fd17078665e10782baba89128320a26322adb0be1011575b2b94ae"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/codeshrew/confer/releases/download/v0.8.27/confer-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "900c05ceaacce2544caa55100baebb01f74d492bfa80b1d21781b695f5046eea"
+      url "https://github.com/codeshrew/confer/releases/download/v0.8.28/confer-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "1f6020200af59c36fa1c2ba770414e1812606cf175fb2aa832b8eadb269e3345"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/codeshrew/confer/releases/download/v0.8.27/confer-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "665c8d06fd6d5667cf0d19e1a182bb5a0c9cf3d99ff4a8480707a3458b7790c0"
+      url "https://github.com/codeshrew/confer/releases/download/v0.8.28/confer-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "75624ef519bca48c0b17b040b1cfc63c030abf4486b0a1c9b60a31d33f602ad4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/codeshrew/confer/releases/download/v0.8.27/confer-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "91ae66f0ad71304e2a148fa3694db7c2790d66bd319e2e732bb91e4b05a5db29"
+      url "https://github.com/codeshrew/confer/releases/download/v0.8.28/confer-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "8a55d15746ff1a3f55011179f8fff89c9a86a782f6ab61c87bd9f20a766a55b8"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
